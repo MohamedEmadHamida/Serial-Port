@@ -19,7 +19,6 @@ namespace Serial_Port
         {
             InitializeComponent();
         }
-      
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -38,10 +37,6 @@ namespace Serial_Port
                 Parity = Parity.None,
                 StopBits = StopBits.One
             };
-            comboBox2.Items.AddRange(ports);
-
-
-
 
             serialPort.DataReceived += SerialPort_DataReceived;
         }
